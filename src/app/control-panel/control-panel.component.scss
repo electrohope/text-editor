@@ -1,0 +1,25 @@
+:host {
+  background-color: #fff;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.format-actions {
+  width: 400px;
+  margin-right: 200px;
+
+  > button {
+    margin-right: 10px;
+  }
+}
+
+button + button {
+  margin-left: 5px;
+}
+
+.active{
+  border: 2px solid red;
+}

@@ -1,0 +1,26 @@
+<div class="file">
+  {{text$ | async}}
+</div>
+
+
+<div class="container-fluid screen-height">
+  <div class="row">
+      <div class="col">
+          <!--<app-synonymous-list [list]="synonymousList" [loading]="loading"></app-synonymous-list>-->
+      </div>
+
+    <div class="file col-8">
+        <app-word 
+          [word]="item"
+          (dblclick)="setSelectedWord(item)"
+          *ngFor="let item of text ;trackBy: trackByFn">
+        </app-word>
+      </div>
+      <div class="col">
+         
+        </div>
+  </div>
+
+
+  </div>
+
